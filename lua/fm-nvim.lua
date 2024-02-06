@@ -292,9 +292,9 @@ function M.TaskWarriorTUI()
 end
 function M.Yazi()
     if config.ui.default == "float" then
-        createWin(config.cmds.yazi_cmd .. " --chooser-file /tmp/fm-nvim", "<CR>")
+        createWin(config.cmds.yazi_cmd .. " --chooser-file /tmp/fm-nvim --cwd-file /tmp/yazi-cwd", "<CR>")
     elseif config.ui.default == "split" then
-        createSplit(config.cmds.yazi_cmd .. " --chooser-file /tmp/fm-nvim", "<CR>")
+        createSplit(config.cmds.yazi_cmd .. " --chooser-file /tmp/fm-nvim --cwd-file /tmp/yazi-cwd", "<CR>")
     end
 end
 
